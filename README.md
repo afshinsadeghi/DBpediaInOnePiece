@@ -5,11 +5,11 @@ This code downloads and extracts and merges all ttl files of the current version
 
 ## Please make sure first
 
- 1. You at least have > 30 GB of free disk space on your disk
+ 1. Make > 30 GB of free disk space on your disk
 
- 2. You have bzip2 installed on your system
+ 2. Install bzip2 on your system
 
- 3. Your python has the packages:  "mechanize" "subprocess" ,"time"
+ 3. Install these python packages: "requests" "mechanize" "subprocess" ,"time"
 
 
 ## Questions? find me @:
