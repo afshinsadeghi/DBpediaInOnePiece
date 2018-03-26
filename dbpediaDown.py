@@ -22,16 +22,16 @@ def downloadlink(l):
     f.write(br.response().read())
     print l.text," is downloaded. Extracting..."
     os.system("bzip2 -dk " + l.text)
-
+    os.system("rm " + l.text)
 
 for l in myfiles:
     sleep(1) # sleep so to let the server breath
     downloadlink(l)
 
-os.system("rm *.bz2")
-print "removing downloaded files..."
+
+print "making dbpedia.ttl ..."
 os.system("cat *.ttl > a.ttt")
-print "merging..."
+os.system("rm source.html")
 os.system("rm *.ttl")
 os.system("mv a.ttt DBpedia.ttl")
 print "DBpedia.ttl  is created. have fun!"
