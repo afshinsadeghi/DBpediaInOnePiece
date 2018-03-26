@@ -1,9 +1,14 @@
 # DBPediaDownloder
+
+This code creates a single dbpedia.ttl of the last dbpedia.
+
+## How it works:
+
 This code downloads and extracts and merges all ttl files of the current version of DBpedia into one file
  with name dbpedia.ttl
 
 
-## Please make sure first
+## How to use it:
 
  1. Make > 30 GB of free disk space on your disk
 
@@ -11,7 +16,8 @@ This code downloads and extracts and merges all ttl files of the current version
 
  3. Install these python packages: "requests" "mechanize" "subprocess" ,"time"
 
-
+ 4. Run as:   python dbpediaDown.py
+ 
 ## Questions? find me @:
 
 http://afshn.com
