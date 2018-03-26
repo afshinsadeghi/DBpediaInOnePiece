@@ -18,10 +18,10 @@ for l in br.links():
 
 def downloadlink(l):
     f=open(l.text,"w")
-    br.click_link(l)
+    br.follow_link(l)
     f.write(br.response().read())
     print l.text," is downloaded. Extracting..."
-    os.system("bzip2 - d " + l.text)
+    os.system("bzip2 -dk " + l.text)
 
 
 for l in myfiles:
