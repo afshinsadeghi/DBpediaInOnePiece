@@ -18,15 +18,15 @@ for l in br.links():
 
 def downloadlink(l):
     f=open(l.text,"w")
-    br._factory.is_html = True
+    # br._factory.is_html = True
     br.follow_link(l)
     f.write(br.response().read())
     print l.text," is downloaded. Extracting..."
     os.system("bzip2 -dk " + l.text)
-    os.system("rm " + l.text)
+    # os.system("rm " + l.text)
 
 for l in myfiles:
-    sleep(1) # sleep so to let the server breath
+    sleep(5) # sleep so to let the server breath
     downloadlink(l)
 
 
