@@ -18,11 +18,11 @@ for l in br.links():
 
 def downloadlink(l):
     f=open(l.text,"w")
-    # br._factory.is_html = True
-    br.follow_link(l)
+    br.click_link(l)
+    br._factory.is_html = True
     f.write(br.response().read())
     print l.text," is downloaded. Extracting..."
-    os.system("bzip2 -dk " + l.text)
+    os.system("bzip2 -d " + l.text)
     # os.system("rm " + l.text)
 
 for l in myfiles:
