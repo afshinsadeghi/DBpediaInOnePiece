@@ -19,7 +19,7 @@ for l in br.links():
 def downloadlink(l):
     # f=open(l.text,"w")
     # br.click_link(l)
-    # br._factory.is_html = True
+    br._factory.is_html = True
     br.retrieve(l, l.text)
     # f.write(br.response().read())
     print l.text," is downloaded. Extracting..."
