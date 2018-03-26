@@ -27,3 +27,8 @@ def downloadlink(l):
 for l in myfiles:
     sleep(1) # sleep so to let the server breath
     downloadlink(l)
+
+call(["rm *.bz2"])
+call(["cat *.ttl > a.ttt"])
+call(["rm *.ttl"])
+call(["mv a.ttt DBpedia.ttl"])
