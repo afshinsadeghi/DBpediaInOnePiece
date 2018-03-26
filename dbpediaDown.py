@@ -19,6 +19,7 @@ for l in br.links():
 def downloadlink(l):
     f=open(l.text,"w")
     br.follow_link(l)
+    br._factory.is_html = True
     f.write(br.response().read())
     print l.text," is downloaded. Extracting..."
     os.system("bzip2 -dk " + l.text)
