@@ -1,4 +1,4 @@
-# DBPediaDownloder
+# DBpedia In One Piece
 
 Do you like to have the whole DBpedia dataset downloaded into your system in one piece? This code does the work for you. It creates a single dbpedia.ttl of the last dbpedia.
 
