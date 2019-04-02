@@ -1,10 +1,10 @@
-# DBpedia In One Piece
+# DBPediaDownloder
 
-Do you like to have the whole DBpedia dataset downloaded into your system in one piece? This code does the work for you. It creates a single dbpedia.ttl of the last dbpedia.
+This code creates a single dbpedia.ttl of the last dbpedia.
 
 ## How it works:
 
-This code downloads and extracts and merges all ttl files of the "current" version of DBpedia into one file
+This code downloads and extracts and merges all ttl files of the current version of DBpedia into one file
  with name dbpedia.ttl
 
 
@@ -15,9 +15,31 @@ This code downloads and extracts and merges all ttl files of the "current" versi
  2. Install bzip2 on your system
 
  3. Install these python packages: "requests" "mechanize" "subprocess" ,"time"
+ 
+ virtualenv env
+ source env/bin/activate
+ pip install requests
+ pip install mechanize
+ pip install subprocess
+ pip install time
+ 
+ 4. Run as:   python dbpediaDown.py
+ 
+## Questions? find me @:
 
- 4. Run it and leave it to do the rest:   python dbpediaDown.py
- 
-### Maintainer:
- 
-[Afshin Sadeghi](http://sda.cs.uni-bonn.de/people/afshin-sadeghi/)
+http://afshn.com
+
+http://sda.cs.uni-bonn.de/people/afshin-sadeghi/
+
+https://scholar.google.com/citations?user=uWTszVEAAAAJ&hl=en&oi=ao
+
+### other datases
+
+Linkedmdb movie dataset:
+
+http://www.cs.toronto.edu/~oktie/linkedmdb/
+
+dbpedia movie subset:
+to create that run dbpediaMoviesDown.py
+
+
